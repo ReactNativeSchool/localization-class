@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext } from 'react';
 import {
   View,
   StyleSheet,
@@ -8,61 +8,61 @@ import {
   Text,
   ScrollView,
   TouchableOpacity,
-  ActivityIndicator
-} from "react-native";
-import { format } from "date-fns";
-import { Entypo } from "@expo/vector-icons";
-import { SafeAreaView } from "react-native-safe-area-context";
+  ActivityIndicator,
+} from 'react-native';
+import { format } from 'date-fns';
+import Entypo from 'react-native-vector-icons/Entypo';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-import colors from "../constants/colors";
-import { ConversionInput } from "../components/ConversionInput";
-import { Button } from "../components/Button";
-import { KeyboardSpacer } from "../components/KeyboardSpacer";
-import { ConversionContext } from "../util/ConversionContext";
+import colors from '../constants/colors';
+import { ConversionInput } from '../components/ConversionInput';
+import { Button } from '../components/Button';
+import { KeyboardSpacer } from '../components/KeyboardSpacer';
+import { ConversionContext } from '../util/ConversionContext';
 
-const screen = Dimensions.get("window");
+const screen = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.blue
+    backgroundColor: colors.blue,
   },
   content: {
-    paddingTop: screen.height * 0.1
+    paddingTop: screen.height * 0.1,
   },
   logoContainer: {
-    alignItems: "center",
-    justifyContent: "center",
-    marginBottom: 20
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: 20,
   },
   logoBackground: {
     width: screen.width / 0.45,
-    height: screen.width * 0.45
+    height: screen.width * 0.45,
   },
   logo: {
-    position: "absolute",
+    position: 'absolute',
     width: screen.width * 0.25,
-    height: screen.width * 0.25
+    height: screen.width * 0.25,
   },
   textHeader: {
     color: colors.white,
-    fontWeight: "bold",
+    fontWeight: 'bold',
     fontSize: 30,
-    textAlign: "center",
-    marginBottom: 20
+    textAlign: 'center',
+    marginBottom: 20,
   },
   text: {
     fontSize: 14,
     color: colors.white,
-    textAlign: "center"
+    textAlign: 'center',
   },
   inputContainer: {
-    marginBottom: 10
+    marginBottom: 10,
   },
   header: {
-    alignItems: "flex-end",
-    marginHorizontal: 20
-  }
+    alignItems: 'flex-end',
+    marginHorizontal: 20,
+  },
 });
 
 export default ({ navigation }) => {
@@ -72,9 +72,9 @@ export default ({ navigation }) => {
     swapCurrencies,
     date,
     rates,
-    isLoading
+    isLoading,
   } = useContext(ConversionContext);
-  const [value, setValue] = useState("100");
+  const [value, setValue] = useState('100');
   const [scrollEnabled, setScrollEnabled] = useState(false);
 
   const conversionRate = rates[quoteCurrency];
@@ -84,7 +84,7 @@ export default ({ navigation }) => {
       <StatusBar barStyle="light-content" backgroundColor={colors.blue} />
       <ScrollView scrollEnabled={scrollEnabled}>
         <SafeAreaView style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.push("Options")}>
+          <TouchableOpacity onPress={() => navigation.push('Options')}>
             <Entypo name="cog" size={32} color={colors.white} />
           </TouchableOpacity>
         </SafeAreaView>
@@ -92,12 +92,12 @@ export default ({ navigation }) => {
         <View style={styles.content}>
           <View style={styles.logoContainer}>
             <Image
-              source={require("../assets/images/background.png")}
+              source={require('../assets/images/background.png')}
               style={styles.logoBackground}
               resizeMode="contain"
             />
             <Image
-              source={require("../assets/images/logo.png")}
+              source={require('../assets/images/logo.png')}
               style={styles.logo}
               resizeMode="contain"
             />
@@ -112,13 +112,13 @@ export default ({ navigation }) => {
                   text={baseCurrency}
                   value={value}
                   onButtonPress={() =>
-                    navigation.push("CurrencyList", {
-                      title: "Base Currency",
-                      isBaseCurrency: true
+                    navigation.push('CurrencyList', {
+                      title: 'Base Currency',
+                      isBaseCurrency: true,
                     })
                   }
                   keyboardType="numeric"
-                  onChangeText={text => setValue(text)}
+                  onChangeText={(text) => setValue(text)}
                 />
                 <ConversionInput
                   text={quoteCurrency}
@@ -128,16 +128,17 @@ export default ({ navigation }) => {
                   }
                   editable={false}
                   onButtonPress={() =>
-                    navigation.push("CurrencyList", {
-                      title: "Quote Currency",
-                      isBaseCurrency: false
+                    navigation.push('CurrencyList', {
+                      title: 'Quote Currency',
+                      isBaseCurrency: false,
                     })
                   }
                 />
               </View>
               <Text style={styles.text}>
-                {`1 ${baseCurrency} = ${conversionRate} ${quoteCurrency} as of ${date &&
-                  format(new Date(date), "MMM do, yyyy")}`}
+                {`1 ${baseCurrency} = ${conversionRate} ${quoteCurrency} as of ${
+                  date && format(new Date(date), 'MMM do, yyyy')
+                }`}
               </Text>
               <Button
                 text="Reverse Currencies"
@@ -145,7 +146,7 @@ export default ({ navigation }) => {
               />
             </>
           )}
-          <KeyboardSpacer onToggle={visible => setScrollEnabled(visible)} />
+          <KeyboardSpacer onToggle={(visible) => setScrollEnabled(visible)} />
         </View>
       </ScrollView>
     </View>

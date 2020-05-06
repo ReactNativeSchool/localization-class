@@ -1,13 +1,13 @@
-import React from "react";
-import { TouchableOpacity } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import { Entypo } from "@expo/vector-icons";
+import React from 'react';
+import { TouchableOpacity } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Entypo from 'react-native-vector-icons/Entypo';
 
-import Home from "../screens/Home";
-import Options from "../screens/Options";
-import CurrencyList from "../screens/CurrencyList";
-import colors from "../constants/colors";
+import Home from '../screens/Home';
+import Options from '../screens/Options';
+import CurrencyList from '../screens/CurrencyList';
+import colors from '../constants/colors';
 
 const MainStack = createStackNavigator();
 const MainStackScreen = () => (
@@ -38,11 +38,10 @@ const ModalStackScreen = () => (
         headerRight: () => (
           <TouchableOpacity
             onPress={() => navigation.pop()}
-            style={{ paddingHorizontal: 10 }}
-          >
+            style={{ paddingHorizontal: 10 }}>
             <Entypo name="cross" size={30} color={colors.blue} />
           </TouchableOpacity>
-        )
+        ),
       })}
     />
   </ModalStack.Navigator>

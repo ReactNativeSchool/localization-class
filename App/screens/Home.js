@@ -13,6 +13,7 @@ import {
 import { format } from 'date-fns';
 import Entypo from 'react-native-vector-icons/Entypo';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import i18n from 'i18n-js';
 
 import colors from '../constants/colors';
 import { ConversionInput } from '../components/ConversionInput';
@@ -102,7 +103,9 @@ export default ({ navigation }) => {
               resizeMode="contain"
             />
           </View>
-          <Text style={styles.textHeader}>Currency Converter</Text>
+          <Text style={styles.textHeader}>
+            {i18n.translate('currencyConverter')}
+          </Text>
           {isLoading ? (
             <ActivityIndicator color={colors.white} size="large" />
           ) : (

@@ -1,12 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Navigation from './config/Navigation';
 import { ConversionContextProvider } from './util/ConversionContext';
-import { initialize } from './util/Localization';
+import { useLocalization } from './util/Localization';
 
 export default () => {
-  useEffect(() => {
-    initialize();
-  }, []);
+  useLocalization();
 
   return (
     <ConversionContextProvider>

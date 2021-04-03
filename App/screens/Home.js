@@ -1,4 +1,6 @@
 import React, { useState, useContext } from 'react';
+import i18n from 'i18n-js';
+
 import {
   View,
   StyleSheet,
@@ -102,7 +104,7 @@ export default ({ navigation }) => {
               resizeMode="contain"
             />
           </View>
-          <Text style={styles.textHeader}>Currency Converter</Text>
+          <Text style={styles.textHeader}>{i18n.t("currencyConverter")}</Text>
           {isLoading ? (
             <ActivityIndicator color={colors.white} size="large" />
           ) : (
@@ -113,7 +115,7 @@ export default ({ navigation }) => {
                   value={value}
                   onButtonPress={() =>
                     navigation.push('CurrencyList', {
-                      title: 'Base Currency',
+                      title:  i18n.t('baseCurrency'),
                       isBaseCurrency: true,
                     })
                   }
@@ -129,7 +131,7 @@ export default ({ navigation }) => {
                   editable={false}
                   onButtonPress={() =>
                     navigation.push('CurrencyList', {
-                      title: 'Quote Currency',
+                      title: i18n.t('quoteCurrency'),
                       isBaseCurrency: false,
                     })
                   }
@@ -141,7 +143,7 @@ export default ({ navigation }) => {
                 }`}
               </Text>
               <Button
-                text="Reverse Currencies"
+                text={i18n.t('reverseCurrencies')}
                 onPress={() => swapCurrencies()}
               />
             </>

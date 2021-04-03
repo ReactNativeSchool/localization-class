@@ -36,7 +36,7 @@ export default ({ navigation, route = {} }) => {
       style={{
         flex: 1,
         backgroundColor: colors.white,
-      }}>
+  }}>
       <StatusBar barStyle="dark-content" backgroundColor={colors.white} />
       <FlatList
         data={currencies}

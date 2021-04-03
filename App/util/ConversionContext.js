@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { Alert } from "react-native";
+import i18n from 'i18n-js';
 
 import { api } from "./api";
 
@@ -14,7 +15,11 @@ export const ConversionContextProvider = ({ children }) => {
   const [date, setDate] = useState();
   const [rates, setRates] = useState({});
   const [isLoading, setIsLoading] = useState(true);
-
+  const [locale, setCurrlng] = useState(i18n.locale);
+  const setLang = (lng) => {
+    i18n.locale = lng
+    setCurrlng(lng)
+  }
   const setBaseCurrency = currency => {
     setIsLoading(true);
 
@@ -49,7 +54,9 @@ export const ConversionContextProvider = ({ children }) => {
     swapCurrencies,
     date,
     rates,
-    isLoading
+    isLoading,
+    setLang,
+    locale
   };
 
   return (

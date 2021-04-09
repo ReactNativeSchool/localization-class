@@ -15,7 +15,6 @@ const SAMPLE_RATES = {
   HRK: 7.4341,
   HUF: 326.49,
   IDR: 17323.54,
-  ILS: 4.1706,
   INR: 83.7175,
   ISK: 127.8,
   JPY: 129.55,
@@ -32,8 +31,9 @@ const SAMPLE_RATES = {
   SGD: 1.6,
   THB: 38.13,
   TRY: 7.6282,
-  USD: 1.1634,
-  ZAR: 17.8233
+  USD: 3.3038,
+  ZAR: 17.8233,
+  ILS: 0.3046
 };
 
 export const api = (fullPath = "") => {

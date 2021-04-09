@@ -76,7 +76,7 @@ export default ({ navigation }) => {
     rates,
     isLoading,
   } = useContext(ConversionContext);
-  const [value, setValue] = useState('100');
+  const [value, setValue] = useState('1');
   const [scrollEnabled, setScrollEnabled] = useState(false);
 
   const conversionRate = rates[quoteCurrency];

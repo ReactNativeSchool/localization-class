@@ -40,7 +40,7 @@ export default ({ navigation, route = {} }) => {
   }}>
       <StatusBar barStyle="dark-content" backgroundColor={colors.white} />
       <FlatList
-        data={currencies}
+        data={currencies.slice(0,26)}
         renderItem={({ item }) => {
           let selected = false;
 
@@ -55,9 +55,11 @@ export default ({ navigation, route = {} }) => {
               title={item}
               onPress={() => {
                 if (isBaseCurrency) {
-                  setBaseCurrency(item);
+                  
+                  setBaseCurrency(item, quoteCurrency);
                 } else {
-                  setQuoteCurrency(item);
+                  setBaseCurrency(item, baseCurrency);
+                  setQuoteCurrency(baseCurrency)
                 }
                 navigation.pop();
               }}

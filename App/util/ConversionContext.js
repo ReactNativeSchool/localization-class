@@ -6,8 +6,8 @@ import { api } from "./api";
 
 export const ConversionContext = createContext();
 
-const DEFAULT_BASE_CURRENCY = "ILS";
-const DEFAULT_QUOTE_CURRENCY = "USD";
+const DEFAULT_BASE_CURRENCY = "USD";
+const DEFAULT_QUOTE_CURRENCY = "ILS";
 
 export const ConversionContextProvider = ({ children }) => {
   const [baseCurrency, _setBaseCurrency] = useState(DEFAULT_BASE_CURRENCY);
@@ -22,9 +22,9 @@ export const ConversionContextProvider = ({ children }) => {
     i18n.locale = lng
     setCurrlng(lng)
   }
-  const setBaseCurrency = (currency, _quoteCurrency = 'USD') => {
+  const setBaseCurrency = (currency, _quoteCurrency = 'ILS') => {
     setIsLoading(true);
-
+    console.log(`trying to fetch: ${currency}, ${_quoteCurrency}`)
     return api(`/latest?q=${currency}_${_quoteCurrency}`)
       .then(res => {
         _setBaseCurrency(currency);
@@ -43,7 +43,7 @@ export const ConversionContextProvider = ({ children }) => {
     setBaseCurrency(quoteCurrency, baseCurrency);
     setQuoteCurrency(baseCurrency);
   };
-  const apiKey = `4d4402f744491ea682a3`;
+  const apiKey = `your-currencyconverterapi-key`;
   const getCurrencies = () => {
  
     setIsLoading(true);
@@ -54,7 +54,7 @@ export const ConversionContextProvider = ({ children }) => {
         setCurrencies(Object.keys(res.results).sort());
       })
       .catch(error => {
-        Alert.alert("Sorry, faetch currencies went wrong.", error.message);
+        Alert.alert("Sorry, fetch currencies went wrong.", error.message);
       })
       .finally(() => {
         setIsLoading(false);

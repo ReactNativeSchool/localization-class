@@ -43,24 +43,47 @@ export const api = (fullPath = "") => {
     return Promise.reject(new Error("Path is required."));
   }
 
-  if (path !== "/latest") {
+  /*if (path !== "/latest") {
     return Promise.reject(new Error("Invalid path."));
-  }
+  }*/
 
   const baseCurrency = fullPath.split("q=")[1].split("_")[0] || "EUR";
   const quoteCurrency = fullPath.split("q=")[1].split("_")[1] || "BTC";
 
-  console.log(`baseCurrency: ${baseCurrency}, quoteCurrency: ${quoteCurrency}`)
+  console.log(`###baseCurrency: ${baseCurrency}, quoteCurrency: ${quoteCurrency}`)
   return new Promise(resolve => {
-    setTimeout(() => {
-      resolve({
-        base: baseCurrency,
-        date: format(new Date(), "yyyy-MM-dd"),
-        rates: {
-          ...SAMPLE_RATES,
-          [baseCurrency]: 1
+
+    const apiKey = `your-currencyconverterapi-key`;
+
+    // setTimeout(() => {
+      console.log(`------fetchig currency------${baseCurrency}-${quoteCurrency}`);
+    return fetch(`https://free.currconv.com/api/v7/convert?q=${baseCurrency}_${quoteCurrency}&compact=ultra&apiKey=${apiKey}`)
+    
+    .then(res => res.json())  
+      .then(res => {
+        console.log(`------------`);
+        const [key] = Object.keys(res)
+        const val = res[key];
+        const currKey = key.split('_')[0];
+        // console.log(`------------`);
+        // console.log(`currKey:${currKey}`)
+        const quoteKey = key.split('_')[1];
+        // console.log(`quoteKey:${quoteKey}`)
+
+        const _rates = {
+          [quoteKey]: val.toFixed(2),
+          [currKey]: 1
         }
-      });
-    }, 500);
+        console.log(`rates:${JSON.stringify(_rates)}`)
+        resolve({
+          base: baseCurrency,
+          date: format(new Date(), "yyyy-MM-dd"),
+          rates: {
+            ..._rates,
+            [baseCurrency]: 1
+          }
+        });
+      });  
+    // }, 500);
   });
 };

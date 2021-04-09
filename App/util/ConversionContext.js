@@ -22,14 +22,13 @@ export const ConversionContextProvider = ({ children }) => {
     i18n.locale = lng
     setCurrlng(lng)
   }
-  const setBaseCurrency = currency => {
+  const setBaseCurrency = (currency, _quoteCurrency = 'USD') => {
     setIsLoading(true);
 
-    return api(`/latest?base=${currency}`)
+    return api(`/latest?q=${currency}_${_quoteCurrency}`)
       .then(res => {
         _setBaseCurrency(currency);
         setDate(res.date);
-        console.log(res.rates)
         setRates(res.rates);
       })
       .catch(error => {
@@ -41,7 +40,7 @@ export const ConversionContextProvider = ({ children }) => {
   };
 
   const swapCurrencies = () => {
-    setBaseCurrency(quoteCurrency);
+    setBaseCurrency(quoteCurrency, baseCurrency);
     setQuoteCurrency(baseCurrency);
   };
   const apiKey = `4d4402f744491ea682a3`;

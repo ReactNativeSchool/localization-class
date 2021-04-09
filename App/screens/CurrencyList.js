@@ -3,7 +3,7 @@ import { StatusBar, FlatList, View, StyleSheet } from 'react-native';
 import { useSafeArea } from 'react-native-safe-area-context';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import currencies from '../data/currencies.json';
+//import currencies from '../data/currencies.json';
 import { RowItem, RowSeparator } from '../components/RowItem';
 import colors from '../constants/colors';
 import { ConversionContext } from '../util/ConversionContext';
@@ -26,6 +26,7 @@ export default ({ navigation, route = {} }) => {
     quoteCurrency,
     setBaseCurrency,
     setQuoteCurrency,
+    currencies
   } = useContext(ConversionContext);
 
   const params = route.params || {};

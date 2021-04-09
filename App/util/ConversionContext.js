@@ -78,7 +78,8 @@ export const ConversionContextProvider = ({ children }) => {
     rates,
     isLoading,
     setLang,
-    locale
+    locale,
+    currencies
   };
 
   return (

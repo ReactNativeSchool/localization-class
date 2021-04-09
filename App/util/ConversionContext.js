@@ -16,6 +16,8 @@ export const ConversionContextProvider = ({ children }) => {
   const [rates, setRates] = useState({});
   const [isLoading, setIsLoading] = useState(true);
   const [locale, setCurrlng] = useState(i18n.locale);
+  const [currencies, setCurrencies] = useState([]);
+
   const setLang = (lng) => {
     i18n.locale = lng
     setCurrlng(lng)
@@ -41,10 +43,30 @@ export const ConversionContextProvider = ({ children }) => {
     setBaseCurrency(quoteCurrency);
     setQuoteCurrency(baseCurrency);
   };
+  const apiKey = `4d4402f744491ea682a3`;
+  const getCurrencies = () => {
+ 
+    setIsLoading(true);
+    return fetch(`https://free.currconv.com/api/v7/currencies?apiKey=${apiKey}`)
+      .then(res => res.json())
+      .then(res => {
+        
+        setCurrencies(Object.keys(res.results).sort());
+      })
+      .catch(error => {
+        Alert.alert("Sorry, faetch currencies went wrong.", error.message);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
 
+  }
   useEffect(() => {
-    setBaseCurrency(DEFAULT_BASE_CURRENCY);
+    getCurrencies();
   }, []);
+  useEffect(() => {
+   if ( currencies.length ) setBaseCurrency(DEFAULT_BASE_CURRENCY);
+  }, [currencies]);
 
   const contextValue = {
     baseCurrency,

@@ -40,7 +40,7 @@ export default ({ navigation, route = {} }) => {
   }}>
       <StatusBar barStyle="dark-content" backgroundColor={colors.white} />
       <FlatList
-        data={currencies.slice(0,26)}
+        data={currencies}
         renderItem={({ item }) => {
           let selected = false;
 

@@ -3,9 +3,9 @@ import { Alert } from "react-native";
 import i18n from 'i18n-js';
 
 import { api } from "./api";
-import apiKey from "../constants/apiKeys"
-export const ConversionContext = createContext();
+import apiKey from "../constants/apiKeys";
 
+export const ConversionContext = createContext();
 const DEFAULT_BASE_CURRENCY = "USD";
 const DEFAULT_QUOTE_CURRENCY = "ILS";
 
@@ -48,7 +48,12 @@ export const ConversionContextProvider = ({ children }) => {
  
     setIsLoading(true);
     return fetch(`https://free.currconv.com/api/v7/currencies?apiKey=${apiKey}`)
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) {
+          throw Error(res.statusText)
+        }
+        return res.json()
+      })
       .then(res => {
         setCurrencies(Object.keys(res.results).sort());
       })

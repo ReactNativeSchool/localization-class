@@ -1,5 +1,5 @@
 import { format } from 'date-fns';
-import apiKey from "../constants/apiKeys"
+import { API_KEY } from "@env";
 
 export const api = (fullPath = '') => {
   const [path] = fullPath.split('?');
@@ -21,7 +21,7 @@ export const api = (fullPath = '') => {
   return new Promise((resolve) => {
 
     return fetch(
-      `https://free.currconv.com/api/v7/convert?q=${baseCurrency}_${quoteCurrency}&compact=ultra&apiKey=${apiKey}`,
+      `https://free.currconv.com/api/v7/convert?q=${baseCurrency}_${quoteCurrency}&compact=ultra&apiKey=${API_KEY}`,
     )
       .then((res) => res.json())
       .then((res) => {

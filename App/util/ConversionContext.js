@@ -3,7 +3,7 @@ import { Alert } from 'react-native';
 import i18n from 'i18n-js';
 import { API_KEY } from "@env";
 
-import { api } from './api';
+import { apiRates } from './api';
 
 
 export const ConversionContext = createContext();
@@ -26,7 +26,7 @@ export const ConversionContextProvider = ({ children }) => {
   const setBaseCurrency = (currency, _quoteCurrency = 'ILS') => {
     setIsLoading(true);
     console.log(`trying to fetch: ${currency}, ${_quoteCurrency}`);
-    return api(`/latest?q=${currency}_${_quoteCurrency}`)
+    return apiRates(currency, _quoteCurrency)
       .then((res) => {
         _setBaseCurrency(currency);
         setDate(res.date);

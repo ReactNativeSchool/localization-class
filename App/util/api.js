@@ -1,25 +1,12 @@
 import { format } from 'date-fns';
 import { API_KEY } from "@env";
 
-export const api = (fullPath = '') => {
-  const [path] = fullPath.split('?');
-
-  if (path.length === 0) {
-    return Promise.reject(new Error('Path is required.'));
-  }
-
-  if (path !== '/latest') {
-    return Promise.reject(new Error('Invalid path.'));
-  }
-
-  const baseCurrency = fullPath.split('q=')[1].split('_')[0] || 'EUR';
-  const quoteCurrency = fullPath.split('q=')[1].split('_')[1] || 'BTC';
-
+export const apiRates = ( baseCurrency, quoteCurrency) => {
+ 
   console.log(
     `###baseCurrency: ${baseCurrency}, quoteCurrency: ${quoteCurrency}`,
   );
   return new Promise((resolve) => {
-
     return fetch(
       `https://free.currconv.com/api/v7/convert?q=${baseCurrency}_${quoteCurrency}&compact=ultra&apiKey=${API_KEY}`,
     )
@@ -45,6 +32,5 @@ export const api = (fullPath = '') => {
           },
         });
       });
-
   });
 };

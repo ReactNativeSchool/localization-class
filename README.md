@@ -1,4 +1,4 @@
-# React Native School Localization Class
+# Purpose of this repo
 
 Example project used in React Native School's class on Localization (supporting multiple languages).
 

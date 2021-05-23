@@ -55,7 +55,6 @@ export default ({ navigation, route = {} }) => {
               title={item}
               onPress={() => {
                 if (isBaseCurrency) {
-                  
                   setBaseCurrency(item, quoteCurrency);
                 } else {
                   setBaseCurrency(item, baseCurrency);

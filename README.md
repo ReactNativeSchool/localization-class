@@ -1,6 +1,10 @@
 # Purpose of this repo
 
 To play with React Native framework amd axplre its vairous features.
+like 
+* localization support
+* enviroment variables
+
 
 You'll need to have the [React Native CLI](https://reactnative.dev/docs/environment-setup) installed on your machine in order to follow along.
 

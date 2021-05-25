@@ -1,25 +1,48 @@
 import { useEffect, useState } from 'react';
-import i18n from 'i18n-js';
+import i18n, { translate } from 'i18n-js';
 import * as RNLocalize from 'react-native-localize';
+
+const readableTranslations = {
+  currencyConverter: {
+    en: 'Currency Converter',
+    es: 'Convertidor de Moneda',
+  },
+  reverseCurrencies: {
+    en: 'Reverse Currencies',
+    es: 'Monedas Inversas',
+  },
+  baseCurrency: {
+    en: 'Base Currency',
+    es: 'Moneda Base',
+  },
+  quoteCurrency: {
+    en: 'Quote Currency',
+    es: 'Moneda de Cotización',
+  },
+};
+
+const formatTranslations = (translations = {}) => {
+  const output = {};
+
+  Object.keys(translations).forEach((word) => {
+    const wordTranslations = translations[word];
+    Object.keys(wordTranslations).forEach((language) => {
+      if (!output[language]) {
+        output[language] = {};
+      }
+
+      output[language][word] = translations[word][language];
+    });
+  });
+
+  return output;
+};
 
 export const useLocalization = () => {
   const [localizationConfigured, setLocalizationConfigured] = useState(false);
 
   useEffect(() => {
-    i18n.translations = {
-      en: {
-        currencyConverter: 'Currency Converter',
-        reverseCurrencies: 'Reverse Currencies',
-        baseCurrency: 'Base Currency',
-        quoteCurrency: 'Quote Currency',
-      },
-      es: {
-        currencyConverter: 'Convertidor de Moneda',
-        reverseCurrencies: 'Monedas Inversas',
-        baseCurrency: 'Moneda Base',
-        quoteCurrency: 'Moneda de Cotización',
-      },
-    };
+    i18n.translations = formatTranslations(readableTranslations);
     i18n.fallbacks = true;
     i18n.defaultLocale = 'en';
 

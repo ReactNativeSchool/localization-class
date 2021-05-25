@@ -9,11 +9,19 @@ export const useLocalization = () => {
     i18n.translations = {
       en: {
         currencyConverter: 'Currency Converter',
+        reverseCurrencies: 'Reverse Currencies',
+        baseCurrency: 'Base Currency',
+        quoteCurrency: 'Quote Currency',
       },
       es: {
         currencyConverter: 'Convertidor de Moneda',
+        reverseCurrencies: 'Monedas Inversas',
+        baseCurrency: 'Moneda Base',
+        quoteCurrency: 'Moneda de Cotización',
       },
     };
+    i18n.fallbacks = true;
+    i18n.defaultLocale = 'en';
 
     const handleLocalizationChange = () => {
       const locale = RNLocalize.getLocales()[0].languageCode;

@@ -116,7 +116,7 @@ export default ({ navigation }) => {
                   value={value}
                   onButtonPress={() =>
                     navigation.push('CurrencyList', {
-                      title: 'Base Currency',
+                      title: i18n.t('baseCurrency'),
                       isBaseCurrency: true,
                     })
                   }
@@ -132,7 +132,7 @@ export default ({ navigation }) => {
                   editable={false}
                   onButtonPress={() =>
                     navigation.push('CurrencyList', {
-                      title: 'Quote Currency',
+                      title: i18n.t('quoteCurrency'),
                       isBaseCurrency: false,
                     })
                   }
@@ -144,7 +144,7 @@ export default ({ navigation }) => {
                 }`}
               </Text>
               <Button
-                text="Reverse Currencies"
+                text={i18n.t('reverseCurrencies')}
                 onPress={() => swapCurrencies()}
               />
             </>

@@ -21,12 +21,8 @@ const styles = StyleSheet.create({
 
 export default ({ navigation, route = {} }) => {
   const insets = useSafeArea();
-  const {
-    baseCurrency,
-    quoteCurrency,
-    setBaseCurrency,
-    setQuoteCurrency,
-  } = useContext(ConversionContext);
+  const { baseCurrency, quoteCurrency, setBaseCurrency, setQuoteCurrency } =
+    useContext(ConversionContext);
 
   const params = route.params || {};
   const { isBaseCurrency } = params;
@@ -36,7 +32,8 @@ export default ({ navigation, route = {} }) => {
       style={{
         flex: 1,
         backgroundColor: colors.white,
-      }}>
+      }}
+    >
       <StatusBar barStyle="dark-content" backgroundColor={colors.white} />
       <FlatList
         data={currencies}

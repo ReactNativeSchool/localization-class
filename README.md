@@ -7,11 +7,11 @@ You'll need to have the [React Native CLI](https://reactnative.dev/docs/environm
 ## Installation
 
 - `git clone https://github.com/ReactNativeSchool/localization-class.git`
-- `yarn install` / `npm install`
+- `yarn install`
 
 ## Running
 
-- `yarn run ios`/`npm run ios` or `yarn run android`/`npm run android`
+- `yarn run ios` or `yarn run android`
 
 ---
 

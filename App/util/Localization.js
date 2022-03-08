@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import i18n from 'i18n-js';
 import * as RNLocalize from 'react-native-localize';
 
 export const useLocalization = () => {
+  const [localizationConfigured, setLocalizationConfigured] = useState(false);
+
   useEffect(() => {
     i18n.translations = {
       en: {
@@ -21,10 +23,14 @@ export const useLocalization = () => {
 
     handleLocalizationChange();
 
+    setLocalizationConfigured(true);
+
     RNLocalize.addEventListener('change', handleLocalizationChange);
 
     return () => {
       RNLocalize.removeEventListener('change', handleLocalizationChange);
     };
   }, []);
+
+  return { localizationConfigured };
 };

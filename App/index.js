@@ -4,7 +4,11 @@ import { ConversionContextProvider } from './util/ConversionContext';
 import { useLocalization } from './util/Localization';
 
 export default () => {
-  useLocalization();
+  const { localizationConfigured } = useLocalization();
+
+  if (!localizationConfigured) {
+    return null;
+  }
 
   return (
     <ConversionContextProvider>

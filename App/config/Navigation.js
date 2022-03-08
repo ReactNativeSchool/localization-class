@@ -23,7 +23,7 @@ const MainStackScreen = () => (
 
 const ModalStack = createStackNavigator();
 const ModalStackScreen = () => (
-  <ModalStack.Navigator mode="modal">
+  <ModalStack.Navigator>
     <ModalStack.Screen
       name="Main"
       component={MainStackScreen}
@@ -43,6 +43,7 @@ const ModalStackScreen = () => (
             <Entypo name="cross" size={30} color={colors.blue} />
           </TouchableOpacity>
         ),
+        presentation: 'modal',
       })}
     />
   </ModalStack.Navigator>

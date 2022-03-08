@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		5DF8C2D470F1C1F9EAB3C4A1 /* libPods-LocalizationExample-LocalizationExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 668C24F629AE8E6CADACA6E1 /* libPods-LocalizationExample-LocalizationExampleTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		88CE58B6168C17AA63792110 /* libPods-LocalizationExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE154BF94A0EDD1DF8CFB52B /* libPods-LocalizationExample.a */; };
+		AB559894CE437B53125AC905 /* libPods-LocalizationExample-LocalizationExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0503AE9E92E79E7C2E6E516F /* libPods-LocalizationExample-LocalizationExampleTests.a */; };
+		F74374C3D5376D9440E3E508 /* libPods-LocalizationExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0C9E1FF3A6D0B3544E14D8B /* libPods-LocalizationExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,19 +30,19 @@
 		00E356EE1AD99517003FC87E /* LocalizationExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocalizationExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* LocalizationExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalizationExampleTests.m; sourceTree = "<group>"; };
+		0503AE9E92E79E7C2E6E516F /* libPods-LocalizationExample-LocalizationExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalizationExample-LocalizationExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* LocalizationExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalizationExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = LocalizationExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = LocalizationExample/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = LocalizationExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = LocalizationExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = LocalizationExample/main.m; sourceTree = "<group>"; };
-		44660BB97B33F78937F606ED /* Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig"; path = "Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig"; sourceTree = "<group>"; };
-		45D156A213554D70DBCF1903 /* Pods-LocalizationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample.debug.xcconfig"; path = "Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample.debug.xcconfig"; sourceTree = "<group>"; };
-		668C24F629AE8E6CADACA6E1 /* libPods-LocalizationExample-LocalizationExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalizationExample-LocalizationExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A768D4A502ECD30389AB35 /* Pods-LocalizationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample.release.xcconfig"; path = "Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample.release.xcconfig"; sourceTree = "<group>"; };
+		48E443BF99291674EAE954CD /* Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig"; path = "Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		5081D46EBBE72D22FBCCEA05 /* Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = LocalizationExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		832763DFE2CF4581C5C73F7E /* Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		909FA01CB0299CD65E32A7D6 /* Pods-LocalizationExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample.release.xcconfig"; path = "Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample.release.xcconfig"; sourceTree = "<group>"; };
-		AE154BF94A0EDD1DF8CFB52B /* libPods-LocalizationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalizationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C9E1FF3A6D0B3544E14D8B /* libPods-LocalizationExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LocalizationExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E77DBE525A88F6DF2590328C /* Pods-LocalizationExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LocalizationExample.debug.xcconfig"; path = "Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -51,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DF8C2D470F1C1F9EAB3C4A1 /* libPods-LocalizationExample-LocalizationExampleTests.a in Frameworks */,
+				AB559894CE437B53125AC905 /* libPods-LocalizationExample-LocalizationExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88CE58B6168C17AA63792110 /* libPods-LocalizationExample.a in Frameworks */,
+				F74374C3D5376D9440E3E508 /* libPods-LocalizationExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,23 +96,12 @@
 			name = LocalizationExample;
 			sourceTree = "<group>";
 		};
-		147D9E2A88312C87227A273B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				45D156A213554D70DBCF1903 /* Pods-LocalizationExample.debug.xcconfig */,
-				909FA01CB0299CD65E32A7D6 /* Pods-LocalizationExample.release.xcconfig */,
-				832763DFE2CF4581C5C73F7E /* Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig */,
-				44660BB97B33F78937F606ED /* Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				AE154BF94A0EDD1DF8CFB52B /* libPods-LocalizationExample.a */,
-				668C24F629AE8E6CADACA6E1 /* libPods-LocalizationExample-LocalizationExampleTests.a */,
+				A0C9E1FF3A6D0B3544E14D8B /* libPods-LocalizationExample.a */,
+				0503AE9E92E79E7C2E6E516F /* libPods-LocalizationExample-LocalizationExampleTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,7 +121,7 @@
 				00E356EF1AD99517003FC87E /* LocalizationExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				147D9E2A88312C87227A273B /* Pods */,
+				FBD48E1C56C07603DE481E89 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -148,6 +137,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FBD48E1C56C07603DE481E89 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E77DBE525A88F6DF2590328C /* Pods-LocalizationExample.debug.xcconfig */,
+				41A768D4A502ECD30389AB35 /* Pods-LocalizationExample.release.xcconfig */,
+				5081D46EBBE72D22FBCCEA05 /* Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig */,
+				48E443BF99291674EAE954CD /* Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "LocalizationExampleTests" */;
 			buildPhases = (
-				22FE57216DDEEBF35F164228 /* [CP] Check Pods Manifest.lock */,
+				D7EE2FDDDC4EDCFB5F0C9092 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				A53C5335F91C888470205349 /* [CP] Embed Pods Frameworks */,
-				05A966FF9D48EF2C62DDFF4A /* [CP] Copy Pods Resources */,
+				1127C792CDD6D52A201E0D5E /* [CP] Embed Pods Frameworks */,
+				815155DE5EAF7FB4886B2589 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +177,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "LocalizationExample" */;
 			buildPhases = (
-				C0189653F2AA5C5C8BAF2E97 /* [CP] Check Pods Manifest.lock */,
+				36D7B05F7285A39EB4AC13A9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				EDFEC172F6D8181C0F603CA5 /* [CP] Embed Pods Frameworks */,
-				61BB79BCD889C7AB82D48214 /* [CP] Copy Pods Resources */,
+				EF416169A88F1F65A39FCA1A /* [CP] Embed Pods Frameworks */,
+				1B0789AD6E572FB1B8025C54 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,63 +265,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		05A966FF9D48EF2C62DDFF4A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		22FE57216DDEEBF35F164228 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LocalizationExample-LocalizationExampleTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		61BB79BCD889C7AB82D48214 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A53C5335F91C888470205349 /* [CP] Embed Pods Frameworks */ = {
+		1127C792CDD6D52A201E0D5E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,7 +282,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C0189653F2AA5C5C8BAF2E97 /* [CP] Check Pods Manifest.lock */ = {
+		1B0789AD6E572FB1B8025C54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample/Pods-LocalizationExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36D7B05F7285A39EB4AC13A9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -359,7 +321,46 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EDFEC172F6D8181C0F603CA5 /* [CP] Embed Pods Frameworks */ = {
+		815155DE5EAF7FB4886B2589 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LocalizationExample-LocalizationExampleTests/Pods-LocalizationExample-LocalizationExampleTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7EE2FDDDC4EDCFB5F0C9092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LocalizationExample-LocalizationExampleTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF416169A88F1F65A39FCA1A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -428,7 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 832763DFE2CF4581C5C73F7E /* Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 5081D46EBBE72D22FBCCEA05 /* Pods-LocalizationExample-LocalizationExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -436,7 +437,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = LocalizationExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,12 +456,12 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44660BB97B33F78937F606ED /* Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig */;
+			baseConfigurationReference = 48E443BF99291674EAE954CD /* Pods-LocalizationExample-LocalizationExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = LocalizationExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -479,7 +480,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 45D156A213554D70DBCF1903 /* Pods-LocalizationExample.debug.xcconfig */;
+			baseConfigurationReference = E77DBE525A88F6DF2590328C /* Pods-LocalizationExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -505,7 +506,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 909FA01CB0299CD65E32A7D6 /* Pods-LocalizationExample.release.xcconfig */;
+			baseConfigurationReference = 41A768D4A502ECD30389AB35 /* Pods-LocalizationExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -560,7 +561,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -576,14 +577,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -625,7 +626,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -634,14 +635,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
 				);
 				LIBRARY_SEARCH_PATHS = (
+					"\"$(SDKROOT)/usr/lib/swift\"",
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
